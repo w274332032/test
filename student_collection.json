@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "589ad08d-d0b1-42d7-86e1-7731f99e1a29",
+		"name": "student_system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "添加",
+			"item": [
+				{
+					"name": "名字日期部门都正确",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1647ade7-932a-4ef8-9848-7903080e5fa1",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "rose",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2012-12-12",
+									"type": "text"
+								},
+								{
+									"key": "dept",
+									"value": "啊啊",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/day09-kaoshi/Emp2Action_add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"day09-kaoshi",
+								"Emp2Action_add"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "删除",
+			"item": [
+				{
+					"name": "删除成功",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "86e3b521-61b2-4b11-8c66-7f977d9bf921",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/day09-kaoshi/Emp2Action_deleteById?eid=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"day09-kaoshi",
+								"Emp2Action_deleteById"
+							],
+							"query": [
+								{
+									"key": "eid",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "修改",
+			"item": [
+				{
+					"name": "修改成功",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9c32cc53-46cc-4f8c-a734-521c6a29aa24",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "eid",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "aaa",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "1990-09-09",
+									"type": "text"
+								},
+								{
+									"key": "dept",
+									"value": "试试",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/day09-kaoshi/Emp2Action_update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"day09-kaoshi",
+								"Emp2Action_update"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
