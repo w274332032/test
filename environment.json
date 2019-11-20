@@ -1,0 +1,14 @@
+{
+	"id": "29980d36-2ac3-4c24-b1ee-d60b3c39fe3a",
+	"name": "学生管理系统环境边亮",
+	"values": [
+		{
+			"key": "baseurl",
+			"value": "http://localhost:8080/day09-kaoshi",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2019-11-20T08:01:10.214Z",
+	"_postman_exported_using": "Postman/7.11.0"
+}

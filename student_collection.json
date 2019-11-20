@@ -39,30 +39,27 @@
 							"urlencoded": [
 								{
 									"key": "name",
-									"value": "rose",
+									"value": "朱",
 									"type": "text"
 								},
 								{
 									"key": "date",
-									"value": "2012-12-12",
+									"value": "1998-12-11",
 									"type": "text"
 								},
 								{
 									"key": "dept",
-									"value": "啊啊",
+									"value": "江西",
 									"type": "text"
 								}
 							]
 						},
 						"url": {
-							"raw": "http://localhost:8080/day09-kaoshi/Emp2Action_add",
-							"protocol": "http",
+							"raw": "{{baseurl}}/Emp2Action_add",
 							"host": [
-								"localhost"
+								"{{baseurl}}"
 							],
-							"port": "8080",
 							"path": [
-								"day09-kaoshi",
 								"Emp2Action_add"
 							]
 						}
@@ -95,20 +92,17 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/day09-kaoshi/Emp2Action_deleteById?eid=1",
-							"protocol": "http",
+							"raw": "{{baseurl}}/Emp2Action_deleteById?eid=10",
 							"host": [
-								"localhost"
+								"{{baseurl}}"
 							],
-							"port": "8080",
 							"path": [
-								"day09-kaoshi",
 								"Emp2Action_deleteById"
 							],
 							"query": [
 								{
 									"key": "eid",
-									"value": "1"
+									"value": "10"
 								}
 							]
 						}
@@ -152,12 +146,12 @@
 							"urlencoded": [
 								{
 									"key": "eid",
-									"value": "1",
+									"value": "11",
 									"type": "text"
 								},
 								{
 									"key": "name",
-									"value": "aaa",
+									"value": "zhuangbility",
 									"type": "text"
 								},
 								{
@@ -167,20 +161,17 @@
 								},
 								{
 									"key": "dept",
-									"value": "试试",
+									"value": "河北",
 									"type": "text"
 								}
 							]
 						},
 						"url": {
-							"raw": "http://localhost:8080/day09-kaoshi/Emp2Action_update",
-							"protocol": "http",
+							"raw": "{{baseurl}}/Emp2Action_update",
 							"host": [
-								"localhost"
+								"{{baseurl}}"
 							],
-							"port": "8080",
 							"path": [
-								"day09-kaoshi",
 								"Emp2Action_update"
 							]
 						}
